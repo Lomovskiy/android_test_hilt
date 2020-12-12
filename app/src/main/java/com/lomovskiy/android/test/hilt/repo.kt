@@ -1,11 +1,8 @@
 package com.lomovskiy.android.test.hilt
 
-import javax.inject.Inject
+import javax.inject.Singleton
 
-interface Repo {
+interface Repo
 
-}
-
-class RepoImpl @Inject constructor() : Repo {
-
-}
+@Singleton
+class RepoImpl : Repo
